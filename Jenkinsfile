@@ -1,4 +1,4 @@
-properties([parameters([choice(choices: ['test_kafka', 'test_ssh'], name: 'request')])])
+properties([parameters([choice(choices: ['test_kafka', 'test_ssh', 'test_redis'], name: 'request')])])
 
 pipeline {
     agent any
