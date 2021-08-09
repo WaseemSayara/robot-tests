@@ -13,13 +13,13 @@ Find Keys Using Pattern
 
 Create Key 
     Add Key Value	height	182
-    ${Output}		Key Should Exist 	height
+    Key Should Exist 	height
 
 Delete A Key
     Add Key Value	dad	ahmad
-    ${Output}		Key Should Exist 	dad
+    Key Should Exist 	dad
     delete key		dad
-    ${Output}		Key Should Not Exist 	dad
+    Key Should Not Exist 	dad
 
 Delete Database
     Clean Database
