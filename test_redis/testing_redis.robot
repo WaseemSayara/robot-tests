@@ -6,9 +6,10 @@ Resource        ../Resources/variables.robot
 Test Verify Redis Connection
     Connect To Redis    localhost	6379
     
-Test Verify List Keys
+Test List Keys
     Make Key Value From File		${KEYS_LIST}
-    ${KEYS}	List All Keys
+    Log		hi
+    ${X}=	List All Keys
 
 Test Finding Keys Using Pattern
     Get Keys	${PATTERN}
