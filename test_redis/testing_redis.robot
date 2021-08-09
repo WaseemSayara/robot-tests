@@ -1,5 +1,6 @@
 *** settings ***
 Library         ../libraries/testRedis/TestRedis.py
+Resource        ../Resources/variables.robot
 
 *** Test Cases ***
 Test Verify Redis Connection
