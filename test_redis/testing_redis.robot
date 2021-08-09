@@ -7,7 +7,7 @@ Test Verify Redis Connection
     Connect To Redis    localhost	6379
     
 Test Verify List Keys
-    Make Key Value From File 	${KEYS_LIST}
+    Make Key Value From File 	.	${KEYS_LIST}
     ${KEYS}	List All Keys
 
 Test Finding Keys Using Pattern
