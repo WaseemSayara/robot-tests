@@ -15,7 +15,8 @@ Test List Keys
     Should Contain	${OUTPUT}	car
 
 Test Finding Keys Using Pattern
-    Get Keys	${PATTERN}
+    ${OUTPUT}=		Get Keys	${PATTERN}
+    Should Contain	${OUTPUT}	age
 
 Test Creating A Key 
     Key Should Not Exist 	${NEW_KEY}
