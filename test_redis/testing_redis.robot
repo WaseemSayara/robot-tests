@@ -12,14 +12,15 @@ Find Keys Using Pattern
     Get Keys	a*
 
 Create Key 
+    Key Should Not Exist 	height
     Add Key Value	height	182
     Key Should Exist 	height
 
 Delete A Key
-    Add Key Value	dad	ahmad
-    Key Should Exist 	dad
-    delete key		dad
-    Key Should Not Exist 	dad
+    Add Key Value	height	182
+    Key Should Exist 	height
+    delete key		height
+    Key Should Not Exist 	height
 
 Delete Database
     Clean Database
