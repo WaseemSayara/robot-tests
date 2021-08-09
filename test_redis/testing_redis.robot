@@ -2,25 +2,26 @@
 Library         ../libraries/testRedis/TestRedis.py
 
 *** Test Cases ***
-Connect Redis
+Test Verify Redis Connection
     Connect To Redis    localhost	6379
     
-List Keys
-    List All Keys
+Test Verify List Keys
+    Make Key Value From File 	${KEYS_LIST}
+    ${KEYS}	List All Keys
 
-Find Keys Using Pattern
-    Get Keys	a*
+Test Finding Keys Using Pattern
+    Get Keys	${PATTERN}
 
-Create Key 
-    Key Should Not Exist 	height
-    Add Key Value	height	182
-    Key Should Exist 	height
+Test Creating A Key 
+    Key Should Not Exist 	${NEW_KEY}
+    Add Key Value	${NEW_KEY}	${NEW_VALUE}
+    Key Should Exist 	${NEW_KEY}
 
-Delete A Key
-    Add Key Value	height	182
-    Key Should Exist 	height
-    delete key		height
-    Key Should Not Exist 	height
+Test Deleting A Key
+    Add Key Value	${NEW_KEY}	${NEW_VALUE}
+    Key Should Exist 	${NEW_KEY}
+    delete key		${NEW_KEY}
+    Key Should Not Exist 	${NEW_KEY}
 
-Delete Database
+Test Deleting The Database
     Clean Database

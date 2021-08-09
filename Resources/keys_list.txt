@@ -1,0 +1,3 @@
+name	waseem
+age	20
+car	BMW
