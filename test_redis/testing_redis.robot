@@ -9,7 +9,10 @@ Test Verify Redis Connection
 Test List Keys
     Make Key Value From File		${KEYS_LIST}
     Log		hi
-    ${X}=	List All Keys
+    ${OUTPUT}=	List All Keys
+    Should Contain	${OUTPUT}	name
+    Should Contain	${OUTPUT}	age
+    Should Contain	${OUTPUT}	car
 
 Test Finding Keys Using Pattern
     Get Keys	${PATTERN}
