@@ -1,4 +1,3 @@
-
 properties([parameters([choice(choices: ['test_kafka', 'test_ssh'], name: 'request')])])
 
 pipeline {
@@ -67,5 +66,3 @@ pipeline {
         }
     }
 }
-
-
