@@ -1,3 +1,3 @@
 *** settings ***
-Suite setup	log 	welcome to kafka testing
-Suite teardown	log 	welcome to kafka testing
+Suite setup	log 	welcome to Redis testing
+Suite teardown	log 	welcome to Redis testing
