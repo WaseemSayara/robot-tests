@@ -17,10 +17,11 @@ Test Creating Topic
 #    topic should not exist  waseem55
 
 Test Sending And Consuming File
-    send file to kafka topic    ${NEW_TPOIC}     ${KAFKA_SEND_FILE}
-    kafka Consumer  ${NEW_TPOIC}     ${KAFKA_CONSUME_FILE}
+    send file to kafka topic    ${NEW_TOPIC}     ${KAFKA_SEND_FILE}
+    kafka Consumer  ${NEW_TOPIC}     ${KAFKA_CONSUME_FILE}
     compare sent and consumed files     ${KAFKA_SEND_FILE}  ${KAFKA_CONSUME_FILE}
 
 Get All Topics
     ${TOPICS}   List All Topics
-    Log         ${Topics}
+    Should Contain	${OUTPUT}	waseem4
+    Should Contain	${OUTPUT}	waseem5
