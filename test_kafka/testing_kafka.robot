@@ -5,10 +5,10 @@ Resource               ../Resources/variables.robot
 *** Test Cases ***
 Test Creating Topic
 
-    ${NEW_TPOIC}    Get Unique Topic
-    topic should not exist    ${NEW_TPOIC}
-    create topic    ${NEW_TPOIC}
-    topic should exist    ${NEW_TPOIC}
+    ${NEW_TOPIC}    Get Unique Topic
+    topic should not exist    ${NEW_TOPIC}
+    create topic    ${NEW_TOPIC}
+    topic should exist    ${NEW_TOPIC}
 
 #Delete Topic
 #    create topic    waseem55
@@ -23,5 +23,5 @@ Test Sending And Consuming File
 
 Get All Topics
     ${TOPICS}   List All Topics
-    Should Contain	${OUTPUT}	waseem4
-    Should Contain	${OUTPUT}	waseem5
+    Should Contain	${TOPICS}	waseem4
+    Should Contain	${TOPICS}	waseem5
