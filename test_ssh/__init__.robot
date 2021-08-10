@@ -1,6 +1,6 @@
 *** Settings ***
 Library                ../libraries/testSSh/TestSSH.py
-Resource               ../libraries/Resources/variables.robot
+Resource               ../Resources/variables.robot
 Suite Setup            Custom Setup
 Suite Teardown         Custom Teardown
 
