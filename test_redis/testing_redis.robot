@@ -7,7 +7,7 @@ Test Verify Redis Connection
     Connect To Redis    localhost	6379
     
 Test List Keys
-    Make Key Value From File		${KEYS_LIST}
+    Create Key Value From File		${KEYS_LIST}
     Log		hi
     ${OUTPUT}=	List All Keys
     Should Contain	${OUTPUT}	name
