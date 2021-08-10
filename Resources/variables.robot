@@ -36,10 +36,12 @@ ${SSH_NEW_FILE_CONTENT_4}        hello everyone, nice to meet you
 # REDIS Veriables
 ${NEW_KEY}	           height
 ${NEW_VALUE}	       182
-${PATTERN}	           a*
+${PATTERN}	           d*
 ${KEYS_LIST}           ./Resources/keys_list.txt
 
 # KAFKA Veriables
 
 ${KAFKA_SEND_FILE}          ./Resources/kafka_test_file.txt
 ${KAFKA_CONSUME_FILE}       ./consumed_test_kafka_file.txt
+
+${VALID_TOPIC}              waseem5

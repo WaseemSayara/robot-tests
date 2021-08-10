@@ -1,5 +1,6 @@
 *** settings ***
 Library         ../libraries/testRedis/TestRedis.py
+Library         Collections
 Resource        ../Resources/variables.robot
 
 *** Test Cases ***
@@ -15,8 +16,9 @@ Test List Keys
     Should Contain	${OUTPUT}	car
 
 Test Finding Keys Using Pattern
+    Add Key Value	degree      master
     ${OUTPUT}=		Get Keys	${PATTERN}
-    Should Contain	${OUTPUT}	age
+    Should Contain Match    ${OUTPUT}	${PATTERN}
 
 Test Creating A Key 
     Key Should Not Exist 	${NEW_KEY}
